@@ -99,6 +99,7 @@ const projects = [
     contentType: 'Long-form Publishing',
     platform: 'Web Application',
     cta: 'Visit Website',
+    link: 'https://medium.com/',
   },
   {
     slug: 'rewards',
@@ -109,6 +110,7 @@ const projects = [
     domain: 'Financial Services',
     focus: 'Rewards & Travel',
     cta: 'Visit Website',
+    link: 'https://www.chase.com/personal/credit-cards/ultimate-rewards',
   },
   {
     slug: 'eros',
@@ -119,6 +121,7 @@ const projects = [
     contentType: 'Streaming',
     platform: 'Web Application',
     cta: 'Visit Website',
+    link: 'https://erosnow.com/',
   },
   {
     slug: 'airbnb',
@@ -129,6 +132,7 @@ const projects = [
     platform: 'Web Application',
     domain: 'Travel & Hospitality',
     cta: 'Visit Website',
+    link: 'https://www.airbnb.co.in/?source=ads&locale=en&currency=INR&source=ads&c=.pi0.pk22323507540_179008573169&gad_source=1&gad_campaignid=22323507540&gbraid=0AAAAADz55Ln4ETPLeFgPdP_9TQXX1k-OM&gclid=CjwKCAjwn67VBhBnEiwAXUIN1RomRaDlKwO9Y8pHDVx4CnuNKbkBaTlE1C5DlBG3QbW2nV6v1YugCRoC_I0QAvD_BwE',
   },
 ]
 
@@ -423,7 +427,12 @@ function App() {
                     ))}
                   </div>
 
-                  <button className="project-cta" type="button">
+                  <button className="project-cta" type="button"
+                  onClick={() => {
+                    if (project.link) {
+                      window.open(project.link, "_blank", "noopener,noreferrer");
+                    }
+                  }}>
                     {project.cta}
                   </button>
                 </div>
@@ -812,7 +821,7 @@ function App() {
               <div className="social-block">
                 <small>CONTACT WITH US</small>
                 <div className="social-links">
-                  <a href="#" aria-label="LinkedIn"><Linkedin size={17} /></a>
+                  <a href="https://www.linkedin.com/in/krutika-koshti-4ba0425b/" aria-label="LinkedIn"><Linkedin size={17} /></a>
                   {/* <a href="#" aria-label="Twitter"><Twitter size={17} /></a>
                   <a href="#" aria-label="Instagram"><Instagram size={17} /></a> */}
                 </div>
@@ -828,7 +837,7 @@ function App() {
               </div>
               <p>Crafting modern digital solutions with passion and precision. Focused on performance, accessibility, and clean design.</p>
               <div className="footer-socials">
-                <a href="#" aria-label="LinkedIn"><Linkedin size={17} /></a>
+                <a href="https://www.linkedin.com/in/krutika-koshti-4ba0425b/" aria-label="LinkedIn"><Linkedin size={17} /></a>
                 {/* <a href="#" aria-label="Twitter"><Twitter size={17} /></a>
                 <a href="#" aria-label="Instagram"><Instagram size={17} /></a> */}
               </div>
