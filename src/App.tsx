@@ -279,13 +279,13 @@ function App() {
         </nav>
 
         <div className="topbar-actions">
-          <button className="primary-button" type="button">
+          <a className="primary-button" href="#contact">
             <Mail size={16} />
             Get In Touch
-          </button>
-          <button className="mobile-menu" type="button" aria-label="Open menu">
+          </a>
+          {/* <button className="mobile-menu" type="button" aria-label="Open menu">
             <Menu size={18} />
-          </button>
+          </button> */}
         </div>
       </header>
 
@@ -307,14 +307,14 @@ function App() {
               </p>
 
               <div className="cta-row">
-                <button className="primary-button" type="button">
+                <a className="primary-button" href="#projects">
                   Explore My Work
                   <ArrowRight size={17} />
-                </button>
-                <button className="secondary-button" type="button">
+                </a>
+                {/* <a className="secondary-button" href="#contact">
                   <Mail size={16} />
                   Start a Project
-                </button>
+                </a> */}
               </div>
             </div>
 
@@ -602,8 +602,8 @@ function App() {
               <div className="resume-row">
                 <a
                   className="resume-button"
-                  href="/Krutika_Koshti_Updated_Resume.pdf"
-                  download="Krutika_Koshti_Updated_Resume.pdf"
+                  href="/Krutika-Resume-latest-Updated.docx"
+                  download="Krutika-Resume-latest-Updated.docx"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -821,7 +821,7 @@ function App() {
               <div className="social-block">
                 <small>CONTACT WITH US</small>
                 <div className="social-links">
-                  <a href="https://www.linkedin.com/in/krutika-koshti-4ba0425b/" aria-label="LinkedIn"><Linkedin size={17} /></a>
+                  <a href="https://www.linkedin.com/in/krutika-koshti-4ba0425b/" target="_blank" aria-label="LinkedIn"><Linkedin size={17} /></a>
                   {/* <a href="#" aria-label="Twitter"><Twitter size={17} /></a>
                   <a href="#" aria-label="Instagram"><Instagram size={17} /></a> */}
                 </div>
@@ -837,7 +837,7 @@ function App() {
               </div>
               <p>Crafting modern digital solutions with passion and precision. Focused on performance, accessibility, and clean design.</p>
               <div className="footer-socials">
-                <a href="https://www.linkedin.com/in/krutika-koshti-4ba0425b/" aria-label="LinkedIn"><Linkedin size={17} /></a>
+                <a href="https://www.linkedin.com/in/krutika-koshti-4ba0425b/" target="_blank" aria-label="LinkedIn"><Linkedin size={17} /></a>
                 {/* <a href="#" aria-label="Twitter"><Twitter size={17} /></a>
                 <a href="#" aria-label="Instagram"><Instagram size={17} /></a> */}
               </div>
