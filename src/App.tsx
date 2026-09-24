@@ -873,14 +873,14 @@ function App() {
         </section>
       </main>
 
-      <div className="floating-actions" aria-label="Scroll controls">
+      {/* <div className="floating-actions" aria-label="Scroll controls">
         <button className="up-button" type="button" aria-label="Scroll up">
           <ArrowUpRight size={20} />
         </button>
         <button className="down-button" type="button" aria-label="Scroll down">
           <ArrowRight size={20} />
         </button>
-      </div>
+      </div> */}
     </div>
   )
 }

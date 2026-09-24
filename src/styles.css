@@ -315,18 +315,11 @@ img {
 .hero-visual {
   opacity: 0;
   animation: revealVisual 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
+  justify-content: center;
 }
 
 .hero-copy h1 span {
   color: rgba(212, 231, 255, 0.98);
-}
-
-.hero-visual {
-  position: relative;
-  min-height: 480px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero-tech-orbit {
@@ -442,6 +435,12 @@ img {
   min-height: 500px;
   display: grid;
   place-items: center;
+}
+
+@media (max-width: 992px) {
+  .hero-visual{
+    display: none;
+  }
 }
 
 .hero-icon-cluster {
@@ -1600,6 +1599,21 @@ img {
   border-right: 1px solid rgba(255,255,255,0.1);
   /* border-bottom: 1px solid rgba(255,255,255,0.1); */
 }
+
+@media (max-width: 992px) {
+  .experience-list{
+    display: grid;
+    border-top: 1px solid rgba(255,255,255,0.1);  
+  }
+
+  .experience-item{
+    display: flex; 
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}
+
 
 .experience-item div {
   display: grid;
